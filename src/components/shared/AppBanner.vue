@@ -27,16 +27,16 @@ export default {
     class="flex flex-col sm:justify-between items-center sm:flex-row mt-12 sm:mt-10"
   >
     <!-- Banner left contents -->
-    <div class="w-full md:w-1/3 text-left">
+    <div class="w-full md:w-1/3 text-left ml-5">
       <h1
         class="font-general-semibold text-3xl md:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
       >
-        Hi, Iam Azrul
+        Hi, I'm Azrul
       </h1>
       <p
         class="font-general-medium mt-2 text-lg sm:text-xl xl:text-2xl text-center sm:text-left leading-none text-gray-400"
       >
-        A Full-Stack Developer & Design Enthusiast
+        On the path to becoming a Full-Stack Developer
       </p>
       <div class="flex justify-center sm:block">
         <a
@@ -58,12 +58,7 @@ export default {
 
     <!-- Banner right illustration -->
     <div class="w-full md:w-2/3 text-right float-right">
-      <img
-        v-if="theme === 'light'"
-        src="@/assets/images/developer.svg"
-        alt="Developer"
-      />
-      <img v-else src="@/assets/images/developer-dark.svg" alt="Developer" />
+      <img src="@/assets/images/home.jpg" alt="Developer" />
     </div>
   </section>
 </template>
