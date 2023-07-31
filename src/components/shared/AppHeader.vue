@@ -84,20 +84,7 @@ export default {
       <div class="flex justify-between items-center px-4 sm:px-0">
         <!-- Header logos -->
         <div>
-          <router-link to="/"
-            ><img
-              v-if="theme === 'light'"
-              src="@/assets/images/logo-dark.svg"
-              class="w-36"
-              alt="Dark Logo"
-            />
-            <img
-              v-else
-              src="@/assets/images/logo-light.svg"
-              class="w-36"
-              alt="Light Logo"
-            />
-          </router-link>
+          <router-link to="/"></router-link>
         </div>
 
         <!-- Theme switcher small screen -->
