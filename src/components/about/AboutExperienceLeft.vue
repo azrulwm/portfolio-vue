@@ -20,30 +20,33 @@ export default {
           </div>
           <div class="relative z-20">
             <div class="flex flex-wrap items-center">
-              <div class="p-4 md:w-1/4">
+              <div class="flex md:flex-col p-4 w-full md:w-1/5 justify-center">
                 <span class="text-lg text-gray-700 dark:text-gray-400">{{
-                  experience.date
+                  experience.date[0]
                 }}</span>
-                <p
-                  class="text-2xl font-bold text-gray-700 dark:text-gray-400 text-bold"
-                >
-                  01
+                <p>&nbsp;-&nbsp;</p>
+                <p class="text-lg text-gray-700 dark:text-gray-400">
+                  {{ experience.date[1] }}
                 </p>
-                <span class="text-lg text-gray-700 dark:text-gray-400"
-                  >2015</span
-                >
               </div>
               <div
                 class="flex-1 p-4 pr-4 border-l border-gray-300 dark:border-gray-700"
               >
-                <p
-                  class="mb-2 text-xl font-bold text-gray-600 dark:text-gray-400"
-                >
-                  {{ experience.company }}
-                </p>
+                <div class="flex flex-wrap gap-2 justify-between items-center">
+                  <p
+                    class="mb-2 text-xl font-bold text-gray-600 dark:text-gray-400"
+                  >
+                    {{ experience.company }}
+                  </p>
+                  <p
+                    class="mb-2 text-xl font-bold italic text-gray-600 dark:text-gray-400"
+                  >
+                    {{ experience.position }}
+                  </p>
+                </div>
                 <div v-for="(detail, index) in experience.details" :key="index">
-                  <p class="text-gray-700 dark:text-gray-500">
-                    {{ detail.description }}
+                  <p class="text-gray-700 dark:text-gray-500 text-justify">
+                    ● {{ detail.description }}
                   </p>
                 </div>
               </div>
