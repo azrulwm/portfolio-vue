@@ -1,52 +1,73 @@
 <script>
-import feather from 'feather-icons';
-import ContactForm from '@/components/contact/ContactForm.vue';
-import ContactDetails from '@/components/contact/ContactDetails.vue';
+import feather from "feather-icons";
+import ContactForm from "@/components/contact/ContactForm.vue";
+// import ContactDetails from "@/components/contact/ContactDetails.vue";
 
 export default {
-	components: {
-		ContactForm,
-		ContactDetails,
-	},
-	data: () => {
-		return {
-			contacts: [
-				{
-					id: 1,
-					name: 'Your Address, Your City, Your Country',
-					icon: 'map-pin',
-				},
-				{
-					id: 2,
-					name: 'email@domain.com',
-					icon: 'mail',
-				},
-				{
-					id: 3,
-					name: '555 8888 888',
-					icon: 'phone',
-				},
-			],
-		};
-	},
-	mounted() {
-		feather.replace();
-	},
-	updated() {
-		feather.replace();
-	},
-	methods: {},
+  components: {
+    ContactForm,
+    // ContactDetails,
+  },
+  data: () => {
+    return {
+      contacts: [
+        {
+          id: 1,
+          name: "Your Address, Your City, Your Country",
+          icon: "map-pin",
+        },
+        {
+          id: 2,
+          name: "email@domain.com",
+          icon: "mail",
+        },
+        {
+          id: 3,
+          name: "555 8888 888",
+          icon: "phone",
+        },
+      ],
+    };
+  },
+  mounted() {
+    feather.replace();
+  },
+  updated() {
+    feather.replace();
+  },
+  methods: {},
 };
 </script>
 
 <template>
-	<div
-		class="container mx-auto flex flex-col-reverse md:flex-row py-5 md:py-10 md:mt-10"
-	>
-		<!-- Contact form -->
-		<ContactForm />
+  <div
+    class="container flex flex-col md:flex-row items-center mx-auto py-5 md:py-10 md:mt-10"
+  >
+    <!-- <p
+      class="font-general-medium mt-2 text-lg sm:text-xl xl:text-2xl text-center sm:text-left leading-none text-gray-400"
+    > -->
+    <div class="md:w-1/2">
+      <p
+        class="font-general-medium my-2 text-lg sm:text-xl xl:text-2xl text-center leading-none bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500 hover:scale-105 transform transition duration-300 ease-in-out"
+      >
+        Exciting opportunities are always welcome! If you've got a project that
+        needs a creative and tech-savvy mind or are seeking a passionate
+        collaborator for an innovative venture, don't hesitate to reach out!
+        Let's make something amazing together!
+      </p>
 
-		<!-- Contact details -->
-		<ContactDetails :contacts="contacts" />
-	</div>
+      <img
+        src="@/assets/images/web-project-2.jpg"
+        class="hidden md:block rounded-xl cursor-pointer shadow-lg sm:shadow-none mt-2"
+        alt="web project"
+      />
+    </div>
+    <!-- Contact form -->
+    <ContactForm />
+
+    <!-- Contact details
+		<ContactDetails :contacts="contacts" /> -->
+  </div>
 </template>
+
+<style lang="scss" scoped></style>
