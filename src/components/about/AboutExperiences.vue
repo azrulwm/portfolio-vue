@@ -1,11 +1,9 @@
 <script>
-import AboutExperienceLeft from "./AboutExperienceLeft.vue";
-import AboutExperienceRight from "./AboutExperienceRight.vue";
+import AboutExperienceItem from "./AboutExperienceItem.vue";
 
 export default {
   components: {
-    AboutExperienceLeft,
-    AboutExperienceRight,
+    AboutExperienceItem,
   },
   data: () => {
     return {
@@ -176,12 +174,13 @@ export default {
             :key="index"
             class="space-y-2 lg:space-y-4"
           >
+            <!-- Left section -->
             <div v-if="index % 2 === 0">
-              <AboutExperienceLeft :experience="experience" />
+              <AboutExperienceItem :experience="experience" :align="'left'" />
             </div>
             <!-- Right section -->
             <div v-else>
-              <AboutExperienceRight :experience="experience" />
+              <AboutExperienceItem :experience="experience" :align="'right'" />
             </div>
           </div>
         </div>
