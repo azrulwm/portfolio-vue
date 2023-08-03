@@ -13,7 +13,7 @@ export default {
     };
   },
   methods: {
-    handleSubmit() {
+    async handleSubmit() {
       const formData = {
         name: this.name,
         email: this.email,
@@ -21,7 +21,25 @@ export default {
         message: this.message,
       };
       console.log(formData);
-      // Now you can send formData to your server
+
+      const url = "https://formsubmit.co/azrulazmi.wm@gmail.com";
+      try {
+        const response = await fetch(url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: formData,
+        });
+
+        if (response.ok) {
+          console.log("Success");
+        } else {
+          console.error("Error:", response.statusText);
+        }
+      } catch (error) {
+        console.error("Error:", error);
+      }
     },
   },
 };
