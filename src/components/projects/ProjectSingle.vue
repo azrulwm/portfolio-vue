@@ -16,7 +16,7 @@ export default {
     class="group rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
     @click="redirectToUrl"
   >
-    <div class="relative max-w-xs max-h-80">
+    <div class="relative overflow-hidden bg-gray-500">
       <p
         v-if="project.url"
         class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 text-white bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600"
@@ -26,7 +26,7 @@ export default {
       <img
         :src="project.img"
         :alt="project.title"
-        class="rounded-t-xl border-none"
+        class="rounded-t-xl border-none mx-auto max-h-80 object-fill"
       />
     </div>
     <div class="text-center px-4 py-6">
