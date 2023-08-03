@@ -2,12 +2,10 @@
 import feather from "feather-icons";
 import ProjectSingle from "./ProjectSingle.vue";
 import projects from "../../data/projects";
-// import ProjectsFilter from "./ProjectsFilter.vue";
 
 export default {
   components: {
     ProjectSingle,
-    // ProjectsFilter
   },
   data: () => {
     return {
@@ -29,15 +27,6 @@ export default {
     },
   },
   methods: {
-    // Filter projects by category
-    filterProjectsByCategory() {
-      return this.projects.filter((item) => {
-        let category =
-          item.category.charAt(0).toUpperCase() + item.category.slice(1);
-        console.log(category);
-        return category.includes(this.selectedCategory);
-      });
-    },
     // Filter projects by title search
     filterProjectsBySearch() {
       let project = new RegExp(this.searchProject, "i");
@@ -67,7 +56,7 @@ export default {
       <h3
         class="font-general-regular text-center text-secondary-dark dark:text-ternary-light text-md sm:text-xl font-normal mb-4"
       >
-        Search projects by title or filter by category
+        Search projects by title
       </h3>
       <div
         class="flex justify-between border-b border-primary-light dark:border-secondary-dark pb-3 gap-2"
@@ -92,7 +81,6 @@ export default {
             aria-label="Name"
           />
         </div>
-        <!-- <ProjectsFilter @filter="selectedCategory = $event" /> -->
       </div>
     </div>
 
