@@ -9,9 +9,7 @@ export default {
     AppFooter,
   },
   data: () => {
-    return {
-      appTheme: localStorage.getItem("theme"),
-    };
+    return {};
   },
   mounted() {
     feather.replace();
@@ -23,14 +21,14 @@ export default {
 </script>
 
 <template>
-  <div :class="appTheme" class="pt-0.5">
+  <div class="pt-0.5 bg-primary-dark">
     <!-- App header -->
     <AppHeader />
 
     <!-- Render active component contents with vue transition -->
     <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
-        <component :is="Component" :theme="appTheme" />
+        <component :is="Component" />
       </transition>
     </router-view>
 

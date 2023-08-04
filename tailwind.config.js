@@ -9,7 +9,6 @@ module.exports = {
     "./src/**/*.md",
   ],
 
-  darkMode: "class",
   theme: {
     extend: {
       colors: {

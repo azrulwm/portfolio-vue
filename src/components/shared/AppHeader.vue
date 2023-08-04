@@ -65,7 +65,7 @@ export default {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
-              class="h-7 w-7 fill-current text-secondary-dark dark:text-ternary-light"
+              class="h-7 w-7 fill-current text-ternary-light"
             >
               <path
                 v-if="isOpen"
@@ -91,8 +91,7 @@ export default {
 
 <style scoped>
 #nav a.router-link-exact-active {
-  @apply text-indigo-700;
-  @apply dark:text-indigo-400;
+  @apply text-indigo-400;
   @apply font-medium;
 }
 </style>

@@ -12,16 +12,14 @@ export default {
 
 <template>
   <div class="flex justify-center items-center text-center">
-    <div
-      class="flex font-general-regular text-lg text-ternary-dark dark:text-ternary-light"
-    >
+    <div class="flex font-general-regular text-lg text-ternary-light">
       &copy; {{ copyrightDate }}.
-      <p class="font-general-medium dark:hover:text-indigo-300 duration-500">
+      <p class="font-general-medium hover:text-indigo-300 duration-500">
         {{ projectName }}
       </p>
       . Developed by
       <p
-        class="font-general-medium text-secondary-dark dark:text-secondary-light uppercase dark:hover:text-indigo-300 duration-500"
+        class="font-general-medium text-secondary-light uppercase hover:text-indigo-300 duration-500"
       >
         {{ author }}
       </p>

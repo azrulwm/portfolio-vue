@@ -9,7 +9,7 @@ export default {
     <img
       :src="skill.img"
       :alt="skill.title"
-      class="w-64 py-5 px-10 border border-ternary-light dark:border-ternary-dark shadow-sm rounded-lg mb-8 cursor-pointer dark:bg-secondary-light"
+      class="w-64 py-5 px-10 border border-ternary-dark shadow-sm rounded-lg mb-8 cursor-pointer bg-secondary-light"
     />
     {{ skill.title }}
   </div>

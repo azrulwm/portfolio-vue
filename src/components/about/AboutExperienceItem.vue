@@ -26,9 +26,7 @@ export default {
             : 'w-full lg:w-1/2 lg:pr-8'
         "
       >
-        <div
-          class="relative flex-1 mb-10 bg-white rounded shadow lg:mb-8 dark:bg-gray-900"
-        >
+        <div class="relative flex-1 mb-10 rounded shadow lg:mb-8 bg-gray-900">
           <div
             :class="
               align === 'right'
@@ -39,39 +37,33 @@ export default {
             <div
               :class="
                 align === 'right'
-                  ? 'hidden h-10 origin-top-right transform -rotate-45 bg-white shadow lg:block dark:bg-gray-900'
-                  : 'hidden h-10 origin-bottom-left transform -rotate-45 bg-white shadow lg:block dark:bg-gray-900'
+                  ? 'hidden h-10 origin-top-right transform -rotate-45 shadow lg:block bg-gray-900'
+                  : 'hidden h-10 origin-bottom-left transform -rotate-45 shadow lg:block bg-gray-900'
               "
             ></div>
           </div>
           <div class="relative z-20">
             <div class="flex flex-wrap items-center">
               <div class="flex md:flex-col p-4 w-full md:w-1/5 justify-center">
-                <span class="text-lg text-gray-700 dark:text-gray-400">{{
+                <span class="text-lg text-gray-400">{{
                   experience.date[0]
                 }}</span>
                 <p>&nbsp;-&nbsp;</p>
-                <p class="text-lg text-gray-700 dark:text-gray-400">
+                <p class="text-lg text-gray-400">
                   {{ experience.date[1] }}
                 </p>
               </div>
-              <div
-                class="flex-1 p-4 pr-4 border-l border-gray-300 dark:border-gray-700"
-              >
+              <div class="flex-1 p-4 pr-4 border-l border-gray-700">
                 <div class="flex flex-wrap gap-2 justify-between items-center">
-                  <p
-                    class="mb-2 text-xl font-bold text-gray-600 dark:text-gray-400"
-                  >
+                  <p class="mb-2 text-xl font-bold text-gray-400">
                     {{ experience.company }}
                   </p>
-                  <p
-                    class="mb-2 text-xl font-bold italic text-gray-600 dark:text-gray-400"
-                  >
+                  <p class="mb-2 text-xl font-bold italic text-gray-400">
                     {{ experience.position }}
                   </p>
                 </div>
                 <div v-for="(detail, index) in experience.details" :key="index">
-                  <p class="text-gray-700 dark:text-gray-500 text-justify">
+                  <p class="text-gray-500 text-justify">
                     ● {{ detail.description }}
                   </p>
                 </div>
@@ -82,7 +74,7 @@ export default {
       </div>
     </div>
     <div
-      class="absolute flex items-center justify-center w-8 h-8 transform -translate-x-1/2 -translate-y-4 bg-purple-500 rounded-full dark:bg-gray-700 left-1/2"
+      class="absolute flex items-center justify-center w-8 h-8 transform -translate-x-1/2 -translate-y-4 bg-purple-500 rounded-full bg-gray-700 left-1/2"
       :class="
         align === 'right' ? 'lg:translate-y-[3px]' : 'lg:translate-y-[4px]'
       "

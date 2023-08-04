@@ -144,11 +144,11 @@ export default {
 </script>
 
 <template>
-  <section class="py-16 bg-[#EFF0F4] lg:py-20 dark:bg-gray-800 font-poppins">
+  <section class="py-16 lg:py-20 bg-gray-800 font-poppins">
     <div class="max-w-xl mx-auto">
       <div class="text-center">
         <div class="flex flex-col items-center">
-          <h1 class="text-5xl font-bold leading-tight dark:text-white">
+          <h1 class="text-5xl font-bold leading-tight text-white">
             Education and<span class="text-purple-500"> Experiences </span>
           </h1>
           <div class="flex w-24 mt-1 mb-6 overflow-hidden rounded">
@@ -167,7 +167,7 @@ export default {
       <div class="w-full px-4 mx-auto">
         <div class="relative">
           <div
-            class="absolute hidden w-1 h-full transform -translate-x-1/2 bg-[#c9e2f5] dark:bg-gray-700 lg:block left-1/2"
+            class="absolute hidden w-1 h-full transform -translate-x-1/2 bg-gray-700 lg:block left-1/2"
           ></div>
           <div
             v-for="(experience, index) in experiences"
