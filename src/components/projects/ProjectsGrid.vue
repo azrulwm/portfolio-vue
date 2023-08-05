@@ -43,7 +43,7 @@ export default {
     <!-- Projects grid title -->
     <div class="text-center">
       <p
-        class="font-general-semibold text-2xl sm:text-5xl font-semibold mb-2 text-ternary-light"
+        class="font-general-semibold text-2xl sm:text-5xl font-semibold mb-2 text-primary-light"
       >
         {{ projectsHeading }}
       </p>
@@ -52,7 +52,7 @@ export default {
     <!-- Filter and search projects -->
     <div class="mt-10 sm:mt-10">
       <h3
-        class="font-general-regular text-center text-ternary-light text-md sm:text-xl font-normal mb-4"
+        class="font-general-regular text-center text-secondary-light text-md sm:text-xl font-normal mb-4"
       >
         Search projects by title
       </h3>
