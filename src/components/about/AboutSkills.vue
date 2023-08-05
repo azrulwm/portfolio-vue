@@ -31,36 +31,41 @@ export default {
         },
         {
           id: 5,
+          title: "SCSS",
+          img: require("@/assets/images/skills/scss.png"),
+        },
+        {
+          id: 6,
           title: "ReactJS",
           img: require("@/assets/images/skills/reactjs.png"),
         },
         {
-          id: 6,
+          id: 7,
           title: "VueJS",
           img: require("@/assets/images/skills/vue.png"),
         },
         {
-          id: 7,
+          id: 8,
           title: "NodeJS",
           img: require("@/assets/images/skills/nodejs.png"),
         },
         {
-          id: 8,
+          id: 9,
           title: "NestJS",
           img: require("@/assets/images/skills/nest.png"),
         },
         {
-          id: 9,
+          id: 10,
           title: "TypeORM",
           img: require("@/assets/images/skills/typeorm.svg"),
         },
         {
-          id: 10,
+          id: 11,
           title: "MongoDB",
           img: require("@/assets/images/skills/mongodb.png"),
         },
         {
-          id: 11,
+          id: 12,
           title: "PostgreSQL",
           img: require("@/assets/images/skills/postgresql.png"),
         },

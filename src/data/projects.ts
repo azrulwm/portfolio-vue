@@ -3,6 +3,30 @@
 
 const projects = [
   {
+    id: 15,
+    title: "Manglish",
+    description:
+      "Our first attempt to incorporate AI into our web application. It detects user's pronunciation and score them",
+    img: require("@/assets/images/projects/project-15.png"),
+    url: "https://www.manglish.co/",
+  },
+  {
+    id: 14,
+    title: "Tense",
+    description:
+      "This app tracks custom workouts and syncs the data with notion. This is when I learned how to integrate notion API into the app",
+    img: require("@/assets/images/projects/project-14.png"),
+    url: "https://tenseapp.com/",
+  },
+  {
+    id: 13,
+    title: "MySoalan",
+    description:
+      "This is the platform that I spend most of my time when I was working at MySoalan Technologies. I started with frontend and slowly being trusted to handle the backend",
+    img: require("@/assets/images/projects/project-13.png"),
+    url: "https://mysoalan.com/",
+  },
+  {
     id: 12,
     title: "Ravenbooks",
     description:
