@@ -1,34 +1,12 @@
 <script>
 import feather from "feather-icons";
 import ContactForm from "@/components/contact/ContactForm.vue";
-// import ContactDetails from "@/components/contact/ContactDetails.vue";
 
 export default {
   components: {
     ContactForm,
-    // ContactDetails,
   },
-  data: () => {
-    return {
-      contacts: [
-        {
-          id: 1,
-          name: "Your Address, Your City, Your Country",
-          icon: "map-pin",
-        },
-        {
-          id: 2,
-          name: "email@domain.com",
-          icon: "mail",
-        },
-        {
-          id: 3,
-          name: "555 8888 888",
-          icon: "phone",
-        },
-      ],
-    };
-  },
+
   mounted() {
     feather.replace();
   },
@@ -43,9 +21,6 @@ export default {
   <div
     class="container flex flex-col md:flex-row items-center mx-auto py-5 md:py-10 md:mt-10"
   >
-    <!-- <p
-      class="font-general-medium mt-2 text-lg sm:text-xl xl:text-2xl text-center sm:text-left leading-none text-gray-400"
-    > -->
     <div class="md:w-1/2">
       <p
         class="font-general-medium my-2 text-lg sm:text-xl xl:text-2xl text-center leading-none bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500 hover:scale-105 transform transition duration-300 ease-in-out"
@@ -64,9 +39,6 @@ export default {
     </div>
     <!-- Contact form -->
     <ContactForm />
-
-    <!-- Contact details
-		<ContactDetails :contacts="contacts" /> -->
   </div>
 </template>
 

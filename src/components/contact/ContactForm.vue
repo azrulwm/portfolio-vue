@@ -33,7 +33,7 @@ export default {
         });
 
         if (response.ok) {
-          console.log("Success");
+          alert("Your message has been successfully sent!");
         } else {
           console.error("Error:", response.statusText);
         }
@@ -58,7 +58,6 @@ export default {
         action="#"
         class="font-general-regular space-y-7"
       >
-        {{ name }}
         <FormInput
           :value="name"
           @update:value="name = $event"
@@ -88,7 +87,7 @@ export default {
         <div class="flex justify-center">
           <Button
             title="Send Message"
-            class="px-4 py-2.5 text-white tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg duration-500"
+            class="px-4 py-2.5 text-white tracking-wider bg-indigo-400 hover:bg-primary-highlight focus:ring-1 focus:ring-indigo-900 rounded-lg duration-500"
             type="submit"
             aria-label="Send Message"
           />

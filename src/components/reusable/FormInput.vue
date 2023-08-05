@@ -33,11 +33,11 @@ export default {
 
 <template>
   <div>
-    <label class="block mb-2 text-lg text-primary-light" :for="label">{{
+    <label class="block mb-2 text-lg text-secondary-light" :for="label">{{
       label
     }}</label>
     <input
-      class="w-full px-5 py-3 border border-primary-dark border-opacity-50 text-secondary-light bg-ternary-dark rounded-md shadow-sm text-md"
+      class="w-full px-5 py-3 border border-primary-dark text-secondary-light bg-gray-800 rounded-md shadow-sm text-md"
       :id="inputIdentifier"
       :name="inputIdentifier"
       :placeholder="label"
