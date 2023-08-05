@@ -12,25 +12,25 @@ export default {
   >
     <router-link
       to="/"
-      class="font-general-medium block text-left text-lg font-medium text-ternary-light hover:text-indigo-300 sm:mx-4 mb-2 sm:py-2"
+      class="font-general-medium block text-left text-lg md:text-2xl font-medium text-primary-light hover:text-primary-highlight sm:mx-4 mb-2 sm:py-2"
       aria-label="Home"
       >Home</router-link
     >
     <router-link
       to="/projects"
-      class="font-general-medium block text-left text-lg font-medium text-ternary-light :hover:text-indigo-300 sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-secondary-dark"
+      class="font-general-medium block text-left text-lg md:text-2xl font-medium text-primary-light :hover:text-primary-highlight sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-secondary-dark"
       aria-label="Projects"
       >Projects</router-link
     >
     <router-link
       to="/about"
-      class="font-general-medium block text-left text-lg font-medium text-ternary-light hover:text-indigo-300 sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-secondary-dark"
+      class="font-general-medium block text-left text-lg md:text-2xl font-medium text-primary-light hover:text-primary-highlight sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-secondary-dark"
       aria-label="About Me"
       >About Me</router-link
     >
     <router-link
       to="/contact"
-      class="font-general-medium block text-left text-lg font-medium text-ternary-light hover:text-indigo-300 sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-secondary-dark"
+      class="font-general-medium block text-left text-lg md:text-2xl font-medium text-primary-light hover:text-primary-highlight sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-secondary-dark"
       aria-label="Contact"
       >Contact</router-link
     >

@@ -14,17 +14,10 @@ export default {
     };
   },
 
-  created() {
-    this.theme = localStorage.getItem("theme") || "light";
-  },
   mounted() {
     feather.replace();
-    this.theme = localStorage.getItem("theme") || "light";
   },
   methods: {
-    updateTheme(theme) {
-      this.theme = theme;
-    },
     showModal() {
       if (this.modal) {
         // Stop screen scrolling
@@ -91,7 +84,7 @@ export default {
 
 <style scoped>
 #nav a.router-link-exact-active {
-  @apply text-indigo-400;
+  @apply text-primary-highlight;
   @apply font-medium;
 }
 </style>

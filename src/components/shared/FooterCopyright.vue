@@ -3,8 +3,7 @@ export default {
   data: () => {
     return {
       copyrightDate: new Date().getFullYear(),
-      projectName: "Personal Portfolio",
-      author: "Azrul",
+      projectName: "AZRUL's Personal Portfolio",
     };
   },
 };
@@ -12,16 +11,10 @@ export default {
 
 <template>
   <div class="flex justify-center items-center text-center">
-    <div class="flex font-general-regular text-lg text-ternary-light">
+    <div class="flex font-general-regular text-lg text-secondary-light">
       &copy; {{ copyrightDate }}.
-      <p class="font-general-medium hover:text-indigo-300 duration-500">
+      <p class="font-general-medium duration-500">
         {{ projectName }}
-      </p>
-      . Developed by
-      <p
-        class="font-general-medium text-secondary-light uppercase hover:text-indigo-300 duration-500"
-      >
-        {{ author }}
       </p>
     </div>
   </div>

@@ -22,14 +22,14 @@ export default {
     class="flex flex-col sm:justify-between items-center sm:flex-row mt-12 sm:mt-10"
   >
     <!-- Banner left contents -->
-    <div class="w-full md:w-1/3 text-left ml-5">
+    <div class="w-full md:w-1/3 text-left mr-8">
       <h1
         class="font-general-semibold text-3xl md:text-3xl xl:text-4xl text-center sm:text-left text-primary-light uppercase"
       >
         Hi, I'm Azrul
       </h1>
       <p
-        class="font-general-medium mt-2 text-lg sm:text-xl xl:text-2xl text-center sm:text-left leading-none text-gray-400"
+        class="font-general-medium mt-2 text-lg sm:text-xl xl:text-2xl text-center sm:text-left leading-none text-secondary-light"
       >
         On the path to becoming a Full-Stack Developer
       </p>
@@ -37,7 +37,7 @@ export default {
         <a
           download="Azrul-Resume.pdf"
           href="/files/Azrul-Resume.pdf"
-          class="flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500"
+          class="flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg focus:ring-1 focus:ring-indigo-900 bg-indigo-500 hover:bg-primary-highlight text-white hover:text-white duration-500"
           aria-label="Download Resume"
         >
           <i

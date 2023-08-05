@@ -18,9 +18,7 @@ export default {
   computed: {
     // Get the filtered projects
     filteredProjects() {
-      if (this.selectedCategory) {
-        return this.filterProjectsByCategory();
-      } else if (this.searchProject) {
+      if (this.searchProject) {
         return this.filterProjectsBySearch();
       }
       return this.projects;
@@ -45,7 +43,7 @@ export default {
     <!-- Projects grid title -->
     <div class="text-center">
       <p
-        class="font-general-semibold text-2xl sm:text-5xl font-semibold mb-2text-ternary-light"
+        class="font-general-semibold text-2xl sm:text-5xl font-semibold mb-2 text-ternary-light"
       >
         {{ projectsHeading }}
       </p>
