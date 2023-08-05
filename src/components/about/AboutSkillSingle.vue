@@ -5,11 +5,13 @@ export default {
 </script>
 
 <template>
-  <div class="flex flex-col items-center border">
+  <div
+    class="flex flex-col items-center font-general-regular text-secondary-light text-xl mb-8"
+  >
     <img
       :src="skill.img"
       :alt="skill.title"
-      class="w-64 py-5 px-10 border border-ternary-dark shadow-sm rounded-lg mb-8 cursor-pointer bg-secondary-light"
+      class="py-5 px-10 shadow-sm object-contain h-44"
     />
     {{ skill.title }}
   </div>

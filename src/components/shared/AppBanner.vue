@@ -53,7 +53,7 @@ export default {
 
     <!-- Banner right illustration -->
     <div class="w-full md:w-2/3 text-right float-right">
-      <img src="@/assets/images/home.jpg" alt="Developer" />
+      <img src="@/assets/images/home.jpg" alt="Developer" class="rounded-2xl" />
     </div>
   </section>
 </template>

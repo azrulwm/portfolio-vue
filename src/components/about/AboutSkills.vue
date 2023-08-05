@@ -26,28 +26,43 @@ export default {
         },
         {
           id: 4,
+          title: "TypeScript",
+          img: require("@/assets/images/skills/ts.png"),
+        },
+        {
+          id: 5,
           title: "ReactJS",
           img: require("@/assets/images/skills/reactjs.png"),
         },
         {
-          id: 5,
+          id: 6,
+          title: "VueJS",
+          img: require("@/assets/images/skills/vue.png"),
+        },
+        {
+          id: 7,
           title: "NodeJS",
           img: require("@/assets/images/skills/nodejs.png"),
         },
         {
-          id: 6,
+          id: 8,
+          title: "NestJS",
+          img: require("@/assets/images/skills/nest.png"),
+        },
+        {
+          id: 9,
+          title: "TypeORM",
+          img: require("@/assets/images/skills/typeorm.svg"),
+        },
+        {
+          id: 10,
           title: "MongoDB",
           img: require("@/assets/images/skills/mongodb.png"),
         },
         {
-          id: 7,
-          title: "CANON",
-          img: require("@/assets/images/skills/mongodb.png"),
-        },
-        {
-          id: 7,
-          title: "PUMA",
-          img: require("@/assets/images/skills/mongodb.png"),
+          id: 11,
+          title: "PostgreSQL",
+          img: require("@/assets/images/skills/postgresql.png"),
         },
       ],
     };
@@ -60,7 +75,9 @@ export default {
     <p class="font-general-medium text-2xl sm:text-3xl text-primary-light">
       {{ skillsHeading }}
     </p>
-    <div class="grid grid-cols-2 sm:grid-cols-4 mt-10 sm:mt-14 gap-2">
+    <div
+      class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 mt-10 sm:mt-14 gap-2"
+    >
       <AboutSkillSingle
         v-for="skill in skills"
         :key="skill.id"
