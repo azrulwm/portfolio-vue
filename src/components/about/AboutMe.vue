@@ -7,7 +7,7 @@ export default {
       bios: [
         {
           id: 1,
-          bio: "I am excited to explore a new career path to become a software developer after having worked in the agriculture industry for more than 5 years. I am self-educated and actively learning to equip myself with the skills to become an exceptional software developer. To showcase my learning journey, I have listed them in the project section. Feel free to go through it!",
+          bio: "From a five-year stint in agriculture, I've shifted gears to the dynamic world of software development. Over the past year, I've refined my self-taught coding skills and tackled real-world challenges. I invite you to explore my projects—they stand as proof of my dedication and passion. Eager and ready for new opportunities, I bring a unique perspective to any development team.",
         },
       ],
     };

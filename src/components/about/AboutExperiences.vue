@@ -149,15 +149,15 @@ export default {
       <div class="text-center">
         <div class="flex flex-col items-center">
           <h1 class="text-5xl font-bold leading-tight text-white">
-            Education and<span class="text-purple-500"> Experiences </span>
+            Education and<span class="text-primary-light"> Experiences </span>
           </h1>
           <div class="flex w-24 mt-1 mb-6 overflow-hidden rounded">
-            <div class="flex-1 h-2 bg-purple-200"></div>
-            <div class="flex-1 h-2 bg-purple-400"></div>
-            <div class="flex-1 h-2 bg-purple-600"></div>
+            <div class="flex-1 h-2 bg-[#F5D4C5]"></div>
+            <div class="flex-1 h-2 bg-primary-light"></div>
+            <div class="flex-1 h-2 bg-[#F5A986]"></div>
           </div>
         </div>
-        <p class="mb-16 text-base text-center text-gray-500">
+        <p class="mb-16 text-base text-center text-gray-300">
           These are my past experiences that I have gathered. I hope this will
           give a you a better picture of what I have achieve in my career!
         </p>
@@ -167,7 +167,7 @@ export default {
       <div class="w-full px-4 mx-auto">
         <div class="relative">
           <div
-            class="absolute hidden w-1 h-full transform -translate-x-1/2 bg-gray-700 lg:block left-1/2"
+            class="absolute hidden w-1 h-full transform -translate-x-1/2 bg-gray-400 lg:block left-1/2"
           ></div>
           <div
             v-for="(experience, index) in experiences"
