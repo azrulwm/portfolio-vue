@@ -3,6 +3,20 @@
 
 const projects = [
   {
+    id: 17,
+    title: "Azrul's Portfolio",
+    description:
+      "My latest personal portfolio that I created using VueJS and Tailwind. This latest one is definitely better than the first one I made. If you don't believe me, check it out!",
+    img: require("@/assets/images/projects/project-17.png"),
+  },
+  {
+    id: 16,
+    title: "MySoalan X Snapped",
+    description:
+      "MySoalan collaboration with Snapped to allow students to answer questions within the platform",
+    img: require("@/assets/images/projects/project-16.png"),
+  },
+  {
     id: 15,
     title: "Manglish",
     description:
