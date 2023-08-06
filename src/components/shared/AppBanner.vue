@@ -35,8 +35,8 @@ export default {
       </p>
       <div class="flex justify-center sm:block">
         <a
-          download="Azrul-Resume.pdf"
-          href="/files/CV-Azrul-AZMI.pdf"
+          download="CV-Azrul-AZMI.pdf"
+          href="https://drive.google.com/file/d/1-0Be_eC3lVf6bB7p4X6Hz2cxM0_wikUm/view?usp=sharing"
           class="flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg focus:ring-1 focus:ring-indigo-900 bg-indigo-500 hover:bg-primary-highlight text-white hover:text-white duration-500"
           aria-label="Download Resume"
         >

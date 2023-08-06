@@ -13,7 +13,8 @@ export default {
 
 <template>
   <div
-    class="group rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-dark"
+    class="group rounded-xl shadow-lg hover:shadow-xl mb-10 sm:mb-0 bg-secondary-dark"
+    :class="project.url ? 'cursor-pointer' : ''"
     @click="redirectToUrl"
   >
     <div class="relative overflow-hidden rounded-xl bg-secondary-dark">
