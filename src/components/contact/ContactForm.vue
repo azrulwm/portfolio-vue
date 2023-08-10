@@ -14,32 +14,12 @@ export default {
   },
   methods: {
     async handleSubmit() {
-      const formData = {
-        name: this.name,
-        email: this.email,
-        subject: this.subject,
-        message: this.message,
-      };
-      console.log(formData);
+      document.getElementById("submitForm").submit();
 
-      const url = "https://formsubmit.co/azrulazmi.wm@gmail.com";
-      try {
-        const response = await fetch(url, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: formData,
-        });
-
-        if (response.ok) {
-          alert("Your message has been successfully sent!");
-        } else {
-          console.error("Error:", response.statusText);
-        }
-      } catch (error) {
-        console.error("Error:", error);
-      }
+      this.name = "";
+      this.email = "";
+      this.subject = "";
+      this.message = "";
     },
   },
 };
@@ -54,8 +34,10 @@ export default {
         Contact Form
       </p>
       <form
-        @submit.prevent="handleSubmit"
-        action="#"
+        id="submitForm"
+        action="https://formsubmit.co/azrulazmi.wm@gmail.com"
+        method="post"
+        target="_blank"
         class="font-general-regular space-y-7"
       >
         <FormInput
