@@ -3,6 +3,14 @@
 
 const projects = [
   {
+    id: 18,
+    title: "Technotes",
+    description:
+      "Fullstack app with made with ReactJS that is currently hosted on Render. It is complete with authentification and roles authorisation",
+    img: require("@/assets/images/projects/project-18.png"),
+    url: "https://technotes-react.onrender.com/",
+  },
+  {
     id: 17,
     title: "Azrul's Portfolio",
     description:
