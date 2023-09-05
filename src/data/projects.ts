@@ -3,8 +3,16 @@
 
 const projects = [
   {
+    id: 20,
+    title: "Horizons45 Assessment Task",
+    description:
+      "Created this website for as a task for an interview in Horizons45. This is also my attempt to refresh my skills in React.js and implement a proper state management using Redux and RTK",
+    img: require("@/assets/images/projects/project-20.png"),
+    url: "https://azrulwm.github.io/horizons45/",
+  },
+  {
     id: 19,
-    title: "3D Advertises Website Interview",
+    title: "3D Advertisers Website Interview",
     description:
       "Created this website for as a task for an interview in 3D Advertisers. The website is live and functional however it is not complete",
     img: require("@/assets/images/projects/project-19.png"),
