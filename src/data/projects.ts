@@ -3,6 +3,14 @@
 
 const projects = [
   {
+    id: 21,
+    title: "Codeme-Pro Interview Task",
+    description:
+      "The task's main purpose was to test the logic of solving a real life problem. At the same time, it tests my ability to create API in the backend, calling API from frontend, and storing data in DB",
+    img: require("@/assets/images/projects/project-21.png"),
+    url: "https://codeme-pro.onrender.com",
+  },
+  {
     id: 20,
     title: "Horizons45 Assessment Task",
     description:
