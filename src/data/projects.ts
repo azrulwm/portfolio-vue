@@ -3,6 +3,14 @@
 
 const projects = [
   {
+    id: 22,
+    title: "Qwik-Affirmations",
+    description:
+      "My first attempt to create a simple qwik application and hosting the qwik app on github!",
+    img: require("@/assets/images/projects/project-22.png"),
+    url: "https://azrulwm.github.io/qwik-affirmations/",
+  },
+  {
     id: 21,
     title: "Codeme-Pro Interview Task",
     description:
