@@ -26,7 +26,7 @@ export default {
             : 'w-full lg:w-1/2 lg:pr-8'
         "
       >
-        <div class="relative flex-1 mb-10 rounded shadow lg:mb-8 bg-gray-900">
+        <div class="relative mb-10 flex-1 rounded bg-gray-900 shadow lg:mb-8">
           <div
             :class="
               align === 'right'
@@ -44,7 +44,7 @@ export default {
           </div>
           <div class="relative z-20">
             <div class="flex flex-wrap items-center">
-              <div class="flex md:flex-col p-4 w-full md:w-1/5 justify-center">
+              <div class="flex w-full justify-center p-4 md:w-1/5 md:flex-col">
                 <span class="text-lg text-gray-300">{{
                   experience.date[0]
                 }}</span>
@@ -53,8 +53,8 @@ export default {
                   {{ experience.date[1] }}
                 </p>
               </div>
-              <div class="flex-1 p-4 pr-4 border-l border-gray-700">
-                <div class="flex flex-wrap gap-2 justify-between items-center">
+              <div class="flex-1 border-l border-gray-700 p-4 pr-4">
+                <div class="flex flex-wrap items-center justify-between gap-2">
                   <p class="mb-2 text-xl font-bold text-primary-light">
                     {{ experience.company }}
                   </p>
@@ -63,7 +63,7 @@ export default {
                   </p>
                 </div>
                 <div v-for="(detail, index) in experience.details" :key="index">
-                  <p class="text-secondary-light text-justify">
+                  <p class="text-justify text-secondary-light">
                     ● {{ detail.description }}
                   </p>
                 </div>
@@ -74,7 +74,7 @@ export default {
       </div>
     </div>
     <div
-      class="absolute flex items-center justify-center w-8 h-8 transform -translate-x-1/2 -translate-y-4 bg-primary-light rounded-full bg-gray-700 left-1/2"
+      class="absolute left-1/2 flex h-8 w-8 -translate-x-1/2 -translate-y-4 transform items-center justify-center rounded-full bg-primary-light"
       :class="
         align === 'right' ? 'lg:translate-y-[3px]' : 'lg:translate-y-[4px]'
       "
@@ -84,7 +84,7 @@ export default {
         width="16"
         height="16"
         fill="currentColor"
-        class="w-3 h-3 bi bi-building"
+        class="bi bi-building h-3 w-3"
         viewBox="0 0 16 16"
       >
         <path
