@@ -43,7 +43,7 @@ export default {
     <!-- Projects grid title -->
     <div class="text-center">
       <p
-        class="font-general-semibold text-2xl sm:text-5xl font-semibold mb-2 text-primary-light"
+        class="font-general-semibold mb-2 text-2xl font-semibold text-primary-light sm:text-5xl"
       >
         {{ projectsHeading }}
       </p>
@@ -52,22 +52,22 @@ export default {
     <!-- Filter and search projects -->
     <div class="mt-10 sm:mt-10">
       <h3
-        class="font-general-regular text-center text-secondary-light text-md sm:text-xl font-normal mb-4"
+        class="font-general-regular text-md mb-4 text-center font-normal text-secondary-light sm:text-xl"
       >
         Search projects by title
       </h3>
       <div
-        class="flex justify-between border-b border-secondary-dark pb-3 gap-2"
+        class="flex justify-between gap-2 border-b border-secondary-dark pb-3"
       >
         <div class="flex justify-between gap-2">
           <span
-            class="hidden sm:block bg-ternary-dark p-2.5 shadow-sm rounded-xl cursor-pointer"
+            class="hidden cursor-pointer rounded-xl bg-ternary-dark p-2.5 shadow-sm sm:block"
           >
             <i data-feather="search" class="text-ternary-light"></i>
           </span>
           <input
             v-model="searchProject"
-            class="font-general-medium pl-3 pr-1 sm:px-4 py-2 border-1 border-secondary-dark rounded-lg text-sm sm:text-md bg-ternary-dark text-ternary-light"
+            class="font-general-medium border-1 sm:text-md rounded-lg border-secondary-dark bg-ternary-dark py-2 pl-3 pr-1 text-sm text-ternary-light sm:px-4"
             id="name"
             name="name"
             type="search"
@@ -80,10 +80,10 @@ export default {
     </div>
 
     <!-- Projects grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
+    <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 sm:gap-10 lg:grid-cols-3">
       <ProjectSingle
-        v-for="project in filteredProjects"
-        :key="project.id"
+        v-for="(project, index) in filteredProjects"
+        :key="index"
         :project="project"
       />
     </div>
