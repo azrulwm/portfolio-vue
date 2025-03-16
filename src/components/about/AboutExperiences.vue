@@ -9,7 +9,85 @@ export default {
     return {
       experiences: [
         {
-          date: ["November 2022", "July 2023"],
+          date: ["February 2024", "Current"],
+          company: "Prenetics (Malaysia) Sdn. Bhd.",
+          position: "Full Stack Engineer",
+          details: [
+            {
+              description:
+                "Submitted PR changes within my first three days, quickly adapting to existing codebases. Later, modified 20+ microservice repositories to support new web features with production-ready updates",
+            },
+            {
+              description:
+                "In one month, became the go-to engineer for campaign-related technical issues, creating reusable components that reduced repetitive tasks and eliminated legacy or redundant code",
+            },
+            {
+              description:
+                "Boosted Meta Sales conversion reporting accuracy from 5.3 to 8.7 out of 10, enhancing insights into ad performance and increasing the average ROAS for Prenetics' core market",
+            },
+            {
+              description:
+                "Implemented TikTok’s advertising integration after Meta’s policy changes threatened sales. Reworked event tracking and set up TikTok’s conversion API—ensuring accurate reporting and preserving a key revenue stream",
+            },
+            {
+              description:
+                "Integrated AWIN’s commission-based program by customizing it for Prenetics' services and conducting end-to-end testing, resulting in a successful launch. This funnel now drives an average of USD 5,500 in monthly sales",
+            },
+            {
+              description:
+                "Improved Klaviyo’s endpoint services by upgrading APIs and retiring obsolete code, reducing duplicate customers and enabling more effective newsletter campaigns",
+            },
+            {
+              description:
+                "Authored comprehensive documentation for mobile application releases to fill the knowledge gap left by a departing engineer, serving as a key reference for the team and streamlining future releases",
+            },
+            {
+              description:
+                "Optimized the campaign release process by decoupling text and media assets from the application build, enabling independent CDN updates without full rebuilds",
+            },
+            {
+              description:
+                "Replaced CloudFront booking system with an in-house application, saving at least USD 3,000 annually",
+            },
+            {
+              description:
+                "Restored Crazy Egg’s analytics, proving its value to marketing and unlocking data-driven improvements in campaigns and UI/UX",
+            },
+          ],
+        },
+        {
+          date: ["September 2023", "February 2024"],
+          company: "SOLS Energy Sdn. Bhd.",
+          position: "Web Application Developer",
+          details: [
+            {
+              description:
+                "Created multiple web applications for internal use, utilizing EdenAI for text extraction from images, Firebase Cloud Functions for a serverless backend, and Firestore for real-time data display",
+            },
+            {
+              description:
+                "Updated and maintained Firebase Cloud Functions packages to ensure optimal functionality and usability",
+            },
+            {
+              description:
+                "Tested new frameworks and CMS tools (e.g., Qwik, Builder.io) for client-facing websites to enhance performance and user experience",
+            },
+            {
+              description:
+                "Integrated third-party CRM solutions (e.g., HubSpot) into the company’s website to improve client database management and facilitate purchase follow-ups",
+            },
+            {
+              description:
+                "Built a detailed subscription calculator for solar energy plans by breaking down TNB’s bill structure and the Net Energy Metering (NEM) Scheme giving clients clear cost estimates for solar subscriptions",
+            },
+            {
+              description:
+                "Transformed the manual, error-prone NEM application workflow by integrating PandaDoc, reducing human errors and cutting application time from 30 minutes to just 10 minutes per applicant",
+            },
+          ],
+        },
+        {
+          date: ["November 2022", "September 2023"],
           company: "Mysoalan Technologies",
           position: "Front-end Software Developer",
           details: [
@@ -144,30 +222,30 @@ export default {
 </script>
 
 <template>
-  <section class="py-16 lg:py-20 bg-gray-800 font-poppins">
-    <div class="max-w-xl mx-auto">
+  <section class="font-poppins bg-gray-800 py-16 lg:py-20">
+    <div class="mx-auto max-w-xl">
       <div class="text-center">
         <div class="flex flex-col items-center">
           <h1 class="text-5xl font-bold leading-tight text-white">
             Education and<span class="text-primary-light"> Experiences </span>
           </h1>
-          <div class="flex w-24 mt-1 mb-6 overflow-hidden rounded">
-            <div class="flex-1 h-2 bg-[#F5D4C5]"></div>
-            <div class="flex-1 h-2 bg-primary-light"></div>
-            <div class="flex-1 h-2 bg-[#F5A986]"></div>
+          <div class="mb-6 mt-1 flex w-24 overflow-hidden rounded">
+            <div class="h-2 flex-1 bg-[#F5D4C5]"></div>
+            <div class="h-2 flex-1 bg-primary-light"></div>
+            <div class="h-2 flex-1 bg-[#F5A986]"></div>
           </div>
         </div>
-        <p class="mb-16 text-base text-center text-gray-300">
+        <p class="mb-16 text-center text-base text-gray-300">
           These are my past experiences that I have gathered. I hope this will
           give a you a better picture of what I have achieve in my career!
         </p>
       </div>
     </div>
     <div class="flex flex-col justify-center">
-      <div class="w-full px-4 mx-auto">
+      <div class="mx-auto w-full px-4">
         <div class="relative">
           <div
-            class="absolute hidden w-1 h-full transform -translate-x-1/2 bg-gray-400 lg:block left-1/2"
+            class="absolute left-1/2 hidden h-full w-1 -translate-x-1/2 transform bg-gray-400 lg:block"
           ></div>
           <div
             v-for="(experience, index) in experiences"
