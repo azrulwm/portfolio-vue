@@ -30,6 +30,10 @@ export default {
           img: require("@/assets/images/skills/scss.webp"),
         },
         {
+          title: "TailwindCSS",
+          img: require("@/assets/images/skills/tailwindcss.webp"),
+        },
+        {
           title: "ReactJS",
           img: require("@/assets/images/skills/reactjs.webp"),
         },
@@ -68,6 +72,10 @@ export default {
         {
           title: "PostgreSQL",
           img: require("@/assets/images/skills/postgresql.webp"),
+        },
+        {
+          title: "Docker",
+          img: require("@/assets/images/skills/docker.webp"),
         },
         {
           title: "Postman",
