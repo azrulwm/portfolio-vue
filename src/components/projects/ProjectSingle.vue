@@ -25,7 +25,7 @@ export default {
     :class="project.url ? 'cursor-pointer' : ''"
     @click="redirectToUrl"
   >
-    <div class="relative overflow-hidden rounded-xl bg-secondary-dark">
+    <div class="relative h-64 overflow-hidden rounded-xl bg-secondary-dark">
       <p
         v-if="project.url"
         class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform rounded-lg bg-blue-500 px-4 py-2 text-white opacity-0 hover:bg-blue-600 group-hover:opacity-100"
@@ -35,7 +35,7 @@ export default {
       <img
         :src="projectImage"
         :alt="project.title"
-        class="mx-auto max-h-80 rounded-t-xl border-none object-fill"
+        class="mx-auto h-full w-full rounded-t-xl border-none object-cover"
       />
     </div>
     <div class="px-4 py-6 text-center">

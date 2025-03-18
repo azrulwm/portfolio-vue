@@ -3,6 +3,13 @@
 
 const projects = [
   {
+    title: "Filesystem",
+    description:
+      "Interview test on a filesystem logics. This is a next.js project deployed on github pages",
+    img: require("@/assets/images/projects/project-25.webp"),
+    url: "https://azrulwm.github.io/filesystem/",
+  },
+  {
     title: "Kiara Maniz",
     description:
       "Freelance work to create a static webpage using NextJS and deployed using Vercel",
