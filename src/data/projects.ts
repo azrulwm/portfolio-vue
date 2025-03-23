@@ -21,6 +21,7 @@ const projects = [
     description:
       "First attempt to create backend using Django frawework and deploying to Amazon EC2 using Docker!",
     img: require("@/assets/images/projects/project-23.webp"),
+    url: "http://13.250.100.214/",
   },
   {
     title: "Qwik-Affirmations",
